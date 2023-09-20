@@ -3,20 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Z</title>
-    <link rel="stylesheet" href="output.css">
+    <title>Arch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <img src = "https://static.vecteezy.com/ti/vecteur-libre/t2/6470731-modele-de-logo-animal-animal-moderne-gratuit-vectoriel.jpg" alt="Logo">
+        <h1>L'arche des zanimos</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery d'image</a></li>
+                <li><a href="#shop">Boutique</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
 
+        </nav>
+        <article>
+            <button id="toutAfficher">Tout les animaux</button>
+            <button id="afficherChat">Afficher uniquement les chats</button>
+            <button id="afficherChien">Afficher uniquement les chiens</button>
+            <button id="afficherRongeur">Afficher uniquement les rongeurs</button>
+        </article>
     </header>
 
     <main>
-
+        
+        <article class="gallery">
+            <h2>Nos animaux actuellement disponibles :</h2>
+            <div class="chien">
+                <img src="https://fotomelia.com/wp-content/uploads/edd/2015/08/site-de-photos-et-images-gratuites-libres-de-droits17-1560x1246.jpg" alt="dog with cute look" width="200" height="200">
+                <h3>Canular</h3>  
+                <p>Canular a un an maintenant. Chien tout foufou, il aime jouer, mordiller, aboyer de temps en temps</p>  
+            </div> 
+            <div class="chien">
+                <img src="https://media.istockphoto.com/id/467923438/fr/photo/silly-tilts-chien-t%C3%AAte-en-face-du-grange.jpg?s=612x612&w=0&k=20&c=-McRYrOdeg5h2cDlPUSqfSMIXD9VpvmsMY4MkvUbdvM=" alt="dog with tongue out" width="200" height="200">
+                <h3>Mandarine</h3>
+            </div>
+            <div class="chat">
+                <img src ="./assets/photo-Yumi.jpg" alt="cute cat" width="200" height="300">
+                <h3>Yumi</h3>
+            </div>
+            <div class="chat">
+                <img src="./assets/photo-poticha.jpg" alt="white cat" width="200" height="300">
+                <h3>Potit chat</h3> 
+            </div>
+            <div class="rongeur">
+                <img src="https://www.lacompagniedesanimaux.com/media/amasty/blog/cache/1/f/800/410/1fbdddaae5c4d2ed642d0564c679a1bd.jpg">
+                <h3>Joufflu</h3>
+            </div>
+        </article>
+        <article class="shop">
+            <h2>Boutique en ligne</h2>
+                <h3>Jouets :</h3>
+                        <div class="chat">
+                            <img src="./assets/cape-akatsuki.jpg" alt="cape akatsuki pour chat" width="200" height="200">
+                            <p>Si votre chat a quitté son village natal pour rejoindre une organisation criminelle activement recherchée,</p>
+                            <p>Cette cape lui ira à ravir !</p>
+                            <p><b>23.99€</b></p>
+                        </div>
+                        <div class="chat">
+                            <img src="./assets/point-at-you.jpg" alt="doigt pointé sur l'utilisateur" width="200" height="200">
+                            <p>ultimement, quel jouet sera meilleur pour un chat que vous même...?</p>
+                            <p><b>GRATUIT</b></p>
+                        </div>
+                    <h4>Pour chiens :</h4>
+            
+                <h3>Alimentation :</h3>
+                    <h4>Pour chats :</h4>
+                        
+                    <h4>Pour chiens :</h4>
+        </article>
     </main>
 
-    <footer>
+    <footer class="contact" id="contact">
+        <form action="GET">
+            <label for="username">Vos infos persos :</label>
+            <br>
+            <input type="text" name="name" placeholder="Votre nom" id="name" required>
+            <br>
+            <input type="text" name="firstname" placeholder="Votre prenom" id="firstname" required>
+            <br>
+            <label for="usercontact">Vous contacter :</label>
+            <br>
+            <input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone">
+            <br>
+            <input type="email" name="email" id="email" placeholder="Votre email" required>
+            <br>
+            <label for="userselect">L'animal que vous souhaitez adopté :</label>
+            <br>
+            <select name="leszanimos" id="leszanimos">
+                <option value="1">Ce chat là</option>
+                <option value="2">Ce chat là</option>
+                <option value="3">Ce chien là</option>
+                <option value="4">Ce chien là</option>
+                <option value="5">Ce hamster là</option>
 
+            </select>
+            <button type="submit">Submit</button>
+          </form>
+          <h2>Nous contacter</h2>
+        <address>
+            <p>154 Rue du Lorem, ipsum.</p>
+            <p><a href="tel:+33619095949">06 19 09 59 49</a></p>
+            <p><a href="mailto:archdeszanimos@contact.io">archdeszanimos@contact.io</a></p>
+        </address>
     </footer>
     <script src="app.js"></script>
 </body>
