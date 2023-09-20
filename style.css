@@ -19,6 +19,10 @@ header h1 {
 	  color: #7e4a7c;
 	  text-align: center;
 }
+h3{
+  color: #7e4a7c;
+  font-size: 2.5rem;
+}
 
 header nav ul {
     list-style-type: none;
@@ -49,6 +53,13 @@ header nav ul {
   
   .fle{
     display: flex;
+    font-size: 2rem;
+    margin:1rem;
+    color: #7e4a7c;
+
+  }
+  .gallery img{
+    margin: 2rem;
   }
   /* Style du formulaire */
   

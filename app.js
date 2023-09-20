@@ -115,3 +115,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
     updateCarousel();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const addButton = document.getElementById("addButton");
+    addButton.addEventListener("click", ajouterAnimal);
+
+    function ajouterAnimal() {
+        const typeAnimal = prompt("Entrez le type d'animal (chien, chat ou rongeur):");
+        const nomAnimal = prompt("Entrez le nom de l'animal:");
+        const descriptionAnimal = prompt("Entrez la description physique de l'animal:");
+    
+        const animalDiv = document.createElement("div");
+        animalDiv.classList.add(typeAnimal);
+    
+        const nomElement = document.createElement("h3");
+        nomElement.textContent = nomAnimal;
+    
+        const descriptionElement = document.createElement("p");
+        descriptionElement.textContent = descriptionAnimal;
+    
+        animalDiv.appendChild(nomElement);
+        animalDiv.appendChild(descriptionElement);
+        const galleryElement = document.querySelector(".gallery");
+    
+        if (galleryElement) {
+            galleryElement.appendChild(animalDiv);
+        } else {
+            alert("L'article 'gallery' n'a pas été trouvé.");
+        }
+    }
+    
+    
+    
+});
