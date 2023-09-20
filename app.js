@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let timerInterval;
     let hours = 23;
     let minutes = 50;
-    let seconds = 59;
+    let seconds = 9;
 
     const hoursElement = document.getElementById("hours");
     const minutesElement = document.getElementById("minutes");

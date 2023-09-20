@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        <article class="description">
+        <article id="description" class="description">
             <h2>Qui sommes-nous ?</h2>
             <article class="carousel">
                 <button id="prevButton">Précédent</button>
@@ -44,7 +44,7 @@
             <button id="afficherChien">Afficher uniquement les chiens</button>
             <button id="afficherRongeur">Afficher uniquement les rongeurs</button>
         </article>
-        <article class="gallery">
+        <article class="gallery" id="gallery">
             <h2>Nos animaux actuellement disponibles :</h2>
             <button id="addButton">Ajouter un animal</button>
             <div class="chien">
@@ -92,7 +92,7 @@
             </span>
             <button id="viewMore">Voir +</button>
         </article>
-        <article class="shop">
+        <article class="shop" id="shop">
             <h2>Boutique en ligne</h2>
                 <h3>Jouets :</h3>
                         <div class="chat">
@@ -106,13 +106,19 @@
                             <img src="./assets/point-at-you.jpg" alt="doigt pointé sur l'utilisateur" width="300" height="300">
                             <p><b>GRATUIT</b></p>
                         </div>
+                        <div class="rongeur">
+                            <p>Une cage pour hamster avec un poti toboggan rose tout pipou</p>
+                            <img src="./assets/jouet-hamster.jpg" alt="jouet pour rongeur" width="300" height="300">
+                            <p><b>899.99€</b></p>
+                        </div>
                     <div class="chien">
                         <p>L'incontournable os en plastique, un intemporel de toutes les niches</p>
                         <img src="./assets/os-en-plastique.jpg" alt="un os en plastique" width="300" height="300">
                         <p><b>8.99€</b></p>
                     </div>
             
-                    <h3>Alimentation : <b>PROMO EN COURS : il reste <span id="hours">23</span> heures, <span id="minutes">50</span> minutes et <span id="seconds">59</span> secondes</b></h3>
+                    <h3>Alimentation :</h3>
+                    <p><i><b>PROMO EN COURS : il reste <span id="hours">23</span> heures, <span id="minutes">50</span> minutes et <span id="seconds">09</span> secondes</b></i></p>
 
                     <div class="chat">
                         <p>Les maxi croquettes Royal Canin en léééééégende</p>
@@ -122,8 +128,13 @@
                         
                     <div class="chien">
                         <p>Les maxi croquettes Royal Canin encore, mais version Chien</p>
-                        <img src="./assets/food-chien-1.jpg" alt="nourriture pour chien Royal Canin">
+                        <img src="./assets/food-chien-1.jpg" alt="nourriture pour chien Royal Canin" width="300" height="300">
                         <p><strike><b>39.99€</b></strike> <b>24.99€ !</b></p>
+                    </div>
+                    <div class="rongeur">
+                        <p>Croquettes pour hamster Aimé</p>
+                        <img src="./assets/food-hamster-1.jpg" alt="nourriture pour rongeur" width="300" height="300">
+                        <p><b><strike>39.99€</strike></b> <b>24.99€ !</b></p>
                     </div>
         </article>
     </main>

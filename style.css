@@ -7,7 +7,6 @@ body {
 
   /* Style du header */
 header {
-    background-color: #fffff;
     color: white;
     padding: 20px;
     text-align: center;
@@ -15,7 +14,7 @@ header {
 header h1 { 
     margin-top: 2rem;
 	  margin-bottom: 2rem;
-	  font-size: 3.5rem;
+	  font-size: 4rem;
 	  color: #7e4a7c;
 	  text-align: center;
 }
@@ -33,6 +32,10 @@ header nav ul {
   header nav ul li {
     display: inline;
     margin-right: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    padding: 1rem;
   }
   header nav ul li a {
     color: white;
@@ -42,14 +45,12 @@ header nav ul {
     
     display: flex;
     justify-content: space-evenly;
-  
-
   }
-
+.affichage button{
+  padding: 1.2rem;
+  font-size:1.2rem;
+}
   /* Style du main */
-  img::hover{
-    display
-  }
   main {
     padding: 20px;
   }
@@ -57,19 +58,22 @@ header nav ul {
     margin-bottom: 40px;
   }
   h2{
-    font-size:3rem;
+    font-size: 4rem;
   }
   
   .fle{
     display: flex;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin:1rem;
     color: #7e4a7c;
 
   }
   .qui{
     color: #7e4a7c;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
+    padding: 1.2rem;
+    text-align: center;
+
   }
   .gallery img{
     margin: 2rem;
@@ -160,12 +164,13 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
+  width: 1000px;
+  height: 500px;
   margin: 0 auto;
 }
 .carousel-frame {
   overflow: hidden;
-  height: 100px;
+  height: 500px;
   position: relative;
 }
 .carousel-frame img {
