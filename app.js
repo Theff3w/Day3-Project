@@ -144,7 +144,16 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("L'article 'gallery' n'a pas été trouvé.");
         }
     }
-    
-    
-    
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const viewMoreButton = document.getElementById("viewMore");
+    const hiddenAnimalsDiv = document.querySelector(".gallery .hidden");
+
+    viewMoreButton.addEventListener("click", function() {
+        if (hiddenAnimalsDiv) {
+            hiddenAnimalsDiv.style.display = "block";
+        }
+
+        viewMoreButton.style.display = "none";
+    });
 });

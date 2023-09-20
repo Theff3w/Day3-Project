@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +32,11 @@
                 </article>
                 <button id="nextButton">Suivant</button>
             </article>
+            <article class="qui">
             <p>Le but de l’association l'Arche des zanimos est de replacer des animaux de personnes en difficulté suite au départ en maison de retraite, à un déménagement à l’étranger, à des problèmes de santé… Nous militons également pour que les chiens de races, les nés au coin d’une rue ou les réformés d’élevage aient aussi droit à un nouveau foyer. Les animaux en refuge ont souvent une reconnaissance immense envers leurs nouvelles familles. Ils semblent comprendre intuitivement que vous leur avez donné une seconde chance dans la vie, et ils vous rendent cet amour de manière inconditionnelle. Leur gratitude se traduit par une loyauté sans faille et un attachement profond envers leur nouveau foyer.
 
                 Tous attendent une famille d'adoption pour la vie qui saura leur donner tout l'amour et l'attention dont ils ont besoin. Ils vous attendent dans l'un nos refuges :</p>
+            </article>
         </article>
         <article class="affichage">
             <button id="toutAfficher">Tout les animaux</button>
@@ -45,64 +47,84 @@
         <article class="gallery">
             <h2>Nos animaux actuellement disponibles :</h2>
             <button id="addButton">Ajouter un animal</button>
-              <div class="chien">
+            <div class="chien">
                 <h3>Canular</h3>  
-                <div class="fle">
-                    <img src="https://fotomelia.com/wp-content/uploads/edd/2015/08/site-de-photos-et-images-gratuites-libres-de-droits17-1560x1246.jpg" alt="dog with cute look" width="200" height="200">
+                <span class="fle">
+                    <img src="https://fotomelia.com/wp-content/uploads/edd/2015/08/site-de-photos-et-images-gratuites-libres-de-droits17-1560x1246.jpg" alt="dog with cute look" width="300" height="300">
                     <p>Canular a un an maintenant. Chien tout foufou, il aime jouer, mordiller, aboyer de temps en temps</p>
-              </div>
+                </span>
             </div> 
             <div class="chien">
                 <h3>Mandarine</h3>
-                <div class="fle">
-                    <img src="https://media.istockphoto.com/id/467923438/fr/photo/silly-tilts-chien-t%C3%AAte-en-face-du-grange.jpg?s=612x612&w=0&k=20&c=-McRYrOdeg5h2cDlPUSqfSMIXD9VpvmsMY4MkvUbdvM=" alt="dog with tongue out" width="200" height="200">
+                <span class="fle">
+                    <img src="https://media.istockphoto.com/id/467923438/fr/photo/silly-tilts-chien-t%C3%AAte-en-face-du-grange.jpg?s=612x612&w=0&k=20&c=-McRYrOdeg5h2cDlPUSqfSMIXD9VpvmsMY4MkvUbdvM=" alt="dog with tongue out" width="300" height="300">
                     <p>Mandarine est une femmelle agée de 3 ans. Elle adore les enfants, et les chats. Elle est calme et à besoin de beaucoup de balades.</p>
-            
-                </div>
+                </span>
             </div>
             <div class="chat">
                 <h3>Yumi</h3>
-                <div class="fle">
-                <img src ="./assets/photo-Yumi.jpg" alt="cute cat" width="200" height="200">
+                <span class="fle">
+                <img src ="./assets/photo-Yumi.jpg" alt="cute cat" width="300" height="300">
                 <p>Yumi est une femmelle agée de 5 ans. Elle aime les caresses mais pas tout le temps. Elle aime sa tranquillité </p>
-            </div>
+                </span>
             </div>
             <div class="chat">
                 <h3>Potit chat</h3> 
-                <div class="fle">
-                <img src="./assets/photo-poticha.jpg" alt="white cat" width="200" height="200">
-                <p>Potit chat est un mâle agé de 3 ans. Initiallement nommé Roméo mais ne répond pas à ce prénom. Il aime manger et dormir.</p>
+                <span class="fle">
+                    <img src="./assets/photo-poticha.jpg" alt="white cat" width="300" height="300">
+                    <p>Potit chat est un mâle agé de 3 ans. Initiallement nommé Roméo mais ne répond pas à ce prénom. Il aime manger et dormir.</p>
+                </span>
             </div>
-        </div>
             <div class="rongeur">
                 <h3>Joufflu</h3>
-                <div class="fle">
-                    <img src="https://www.lacompagniedesanimaux.com/media/amasty/blog/cache/1/f/800/410/1fbdddaae5c4d2ed642d0564c679a1bd.jpg" width="200" height="200">
+                <span class="fle">
+                    <img src="https://www.lacompagniedesanimaux.com/media/amasty/blog/cache/1/f/800/410/1fbdddaae5c4d2ed642d0564c679a1bd.jpg" width="300" height="300" alt="hamster">
                     <p>Joufflu est un hamster mâle de 3 mois. Il adore les roues, les carottes, la salade.</p>
+                </span>
             </div>
-            </div>
+            <span class="hidden">
+                <img src="./assets/placeholder.png" alt="placeholder">
+                <img src="./assets/placeholder.png" alt="placeholder">
+                <img src="./assets/placeholder.png" alt="placeholder">
+                <img src="./assets/placeholder.png" alt="placeholder">
+                <img src="./assets/placeholder.png" alt="placeholder">
+                <img src="./assets/placeholder.png" alt="placeholder">
+            </span>
+            <button id="viewMore">Voir +</button>
         </article>
         <article class="shop">
             <h2>Boutique en ligne</h2>
                 <h3>Jouets :</h3>
                         <div class="chat">
                             <p>Si votre chat a quitté son village natal pour rejoindre une organisation criminelle activement recherchée,</p>
-                            <img src="./assets/cape-akatsuki.jpg" alt="cape akatsuki pour chat" width="200" height="200">
+                            <img src="./assets/cape-akatsuki.jpg" alt="cape akatsuki pour chat" width="300" height="300">
                             <p>Cette cape lui ira à ravir !</p>
                             <p><b>23.99€</b></p>
                         </div>
                         <div class="chat">
                             <p>ultimement, quel jouet sera meilleur pour un chat que vous même...?</p>
-                            <img src="./assets/point-at-you.jpg" alt="doigt pointé sur l'utilisateur" width="200" height="200">
+                            <img src="./assets/point-at-you.jpg" alt="doigt pointé sur l'utilisateur" width="300" height="300">
                             <p><b>GRATUIT</b></p>
                         </div>
-                    <h4>Pour chiens :</h4>
+                    <div class="chien">
+                        <p>L'incontournable os en plastique, un intemporel de toutes les niches</p>
+                        <img src="./assets/os-en-plastique.jpg" alt="un os en plastique" width="300" height="300">
+                        <p><b>8.99€</b></p>
+                    </div>
             
                     <h3>Alimentation : <b>PROMO EN COURS : il reste <span id="hours">23</span> heures, <span id="minutes">50</span> minutes et <span id="seconds">59</span> secondes</b></h3>
 
-                    <h4>Pour chats :</h4>
+                    <div class="chat">
+                        <p>Les maxi croquettes Royal Canin en léééééégende</p>
+                        <img src="./assets/food-chat-1.jpg" alt="nourriture pour chat Royal Canin">
+                        <p><strike><b>39.99€</b></strike> <b>24.99€ !</b></p>
+                    </div>
                         
-                    <h4>Pour chiens :</h4>
+                    <div class="chien">
+                        <p>Les maxi croquettes Royal Canin encore, mais version Chien</p>
+                        <img src="./assets/food-chien-1.jpg" alt="nourriture pour chien Royal Canin">
+                        <p><strike><b>39.99€</b></strike> <b>24.99€ !</b></p>
+                    </div>
         </article>
     </main>
 
@@ -123,11 +145,11 @@
             <label for="userselect">L'animal que vous souhaitez adopté :</label>
             <br>
             <select name="leszanimos" id="leszanimos">
-                <option value="1">Ce chat là</option>
-                <option value="2">Ce chat là</option>
-                <option value="3">Ce chien là</option>
-                <option value="4">Ce chien là</option>
-                <option value="5">Ce hamster là</option>
+                <option value="1">Canular</option>
+                <option value="2">Mandarine</option>
+                <option value="3">Yumi</option>
+                <option value="4">Potichat</option>
+                <option value="5">Joufflu</option>
             </select>
             <button type="submit">Submit</button>
         </form>

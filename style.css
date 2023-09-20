@@ -39,16 +39,25 @@ header nav ul {
     text-decoration: none;
   }
   .affichage {
-    background-color: lightblue;
+    
+    display: flex;
+    justify-content: space-evenly;
+  
+
   }
 
   /* Style du main */
-  
+  img::hover{
+    display
+  }
   main {
     padding: 20px;
   }
   article {
     margin-bottom: 40px;
+  }
+  h2{
+    font-size:3rem;
   }
   
   .fle{
@@ -58,11 +67,36 @@ header nav ul {
     color: #7e4a7c;
 
   }
+  .qui{
+    color: #7e4a7c;
+    font-size: 1.4rem;
+  }
   .gallery img{
     margin: 2rem;
+    transition: transform .1s;
+    
   }
-  /* Style du formulaire */
+.gallery img:hover{
+  transform: scale(1.2);
+}
   
+  .gallery .hidden {
+    display: none;
+}
+.shop p{
+  font-size: 2.5rem;
+
+}
+
+  /* Style du formulaire */
+  button{
+	background-color: #7e4a7c;
+	padding: 0.8rem 1rem;
+	color: #fff;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+  border-radius: 0.8rem;
+  }
   form {
     background-color: #f9f9f9;
     padding: 35px;
@@ -129,14 +163,11 @@ header nav ul {
   width: 400px;
   margin: 0 auto;
 }
-
 .carousel-frame {
   overflow: hidden;
-  width: 300px;
-  height: 200px;
+  height: 100px;
   position: relative;
 }
-
 .carousel-frame img {
   width: 100%;
   height: auto;
