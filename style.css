@@ -19,6 +19,7 @@ body {
   header nav ul {
     list-style-type: none;
     padding: 0;
+    background-color: grey;
   }
   header nav ul li {
     display: inline;
@@ -28,7 +29,12 @@ body {
     color: white;
     text-decoration: none;
   }
-  
+  .affichage {
+    background-color: lightblue;
+  }
+  .affiche button {
+    
+  }
   /* Style du main */
   
   main {
