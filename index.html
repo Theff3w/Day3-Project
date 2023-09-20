@@ -10,63 +10,85 @@
     <header>
         <img src = "https://static.vecteezy.com/ti/vecteur-libre/t2/6470731-modele-de-logo-animal-animal-moderne-gratuit-vectoriel.jpg" alt="Logo">
         <h1>L'arche des zanimos</h1>
+        <button id="darkMode">Dark mode</button>
         <nav>
             <ul>
+                <li><a href="#description">Home</a></li>
                 <li><a href="#gallery">Gallery d'image</a></li>
                 <li><a href="#shop">Boutique</a></li>
                 <li><a href="#contact">Contact us</a></li>
             </ul>
         </nav>
+        
+    </header>
+
+    <main>
+        <article class="description">
+            <h2>Qui sommes-nous ?</h2>
+            <article class="carousel">
+                <button id="prevButton">Précédent</button>
+                <article class="carousel-frame">
+                    <img src="" alt="Image du carrousel" id="carouselImage">
+                </article>
+                <button id="nextButton">Suivant</button>
+            </article>
+            <p>Le but de l’association l'Arche des zanimos est de replacer des animaux de personnes en difficulté suite au départ en maison de retraite, à un déménagement à l’étranger, à des problèmes de santé… Nous militons également pour que les chiens de races, les nés au coin d’une rue ou les réformés d’élevage aient aussi droit à un nouveau foyer. Les animaux en refuge ont souvent une reconnaissance immense envers leurs nouvelles familles. Ils semblent comprendre intuitivement que vous leur avez donné une seconde chance dans la vie, et ils vous rendent cet amour de manière inconditionnelle. Leur gratitude se traduit par une loyauté sans faille et un attachement profond envers leur nouveau foyer.
+
+                Tous attendent une famille d'adoption pour la vie qui saura leur donner tout l'amour et l'attention dont ils ont besoin. Ils vous attendent dans l'un nos refuges :</p>
+        </article>
         <article class="affichage">
             <button id="toutAfficher">Tout les animaux</button>
             <button id="afficherChat">Afficher uniquement les chats</button>
             <button id="afficherChien">Afficher uniquement les chiens</button>
             <button id="afficherRongeur">Afficher uniquement les rongeurs</button>
         </article>
-    </header>
-
-    <main>
         <article class="gallery">
             <h2>Nos animaux actuellement disponibles :</h2>
-            <div class="chien">
-                <img src="https://fotomelia.com/wp-content/uploads/edd/2015/08/site-de-photos-et-images-gratuites-libres-de-droits17-1560x1246.jpg" alt="dog with cute look" width="200" height="200">
+              <div class="chien">
                 <h3>Canular</h3>  
-                <p>Canular a un an maintenant. Chien tout foufou, il aime jouer, mordiller, aboyer de temps en temps</p>  
+                <div><img src="https://fotomelia.com/wp-content/uploads/edd/2015/08/site-de-photos-et-images-gratuites-libres-de-droits17-1560x1246.jpg" alt="dog with cute look" width="200" height="200">
+                <p>Canular a un an maintenant. Chien tout foufou, il aime jouer, mordiller, aboyer de temps en temps</p>
+              </div>
             </div> 
             <div class="chien">
-                <img src="https://media.istockphoto.com/id/467923438/fr/photo/silly-tilts-chien-t%C3%AAte-en-face-du-grange.jpg?s=612x612&w=0&k=20&c=-McRYrOdeg5h2cDlPUSqfSMIXD9VpvmsMY4MkvUbdvM=" alt="dog with tongue out" width="200" height="200">
                 <h3>Mandarine</h3>
+                <img src="https://media.istockphoto.com/id/467923438/fr/photo/silly-tilts-chien-t%C3%AAte-en-face-du-grange.jpg?s=612x612&w=0&k=20&c=-McRYrOdeg5h2cDlPUSqfSMIXD9VpvmsMY4MkvUbdvM=" alt="dog with tongue out" width="200" height="200">
+                <p>Mandarine est une femmelle agée de 3 ans. Elle adore les enfants, et les chats. Elle est calme et à besoin de beaucoup de balades.</p>
             </div>
             <div class="chat">
-                <img src ="./assets/photo-Yumi.jpg" alt="cute cat" width="200" height="300">
                 <h3>Yumi</h3>
+                <img src ="./assets/photo-Yumi.jpg" alt="cute cat" width="200" height="300">
+                <p>Yumi est une femmelle agée de 5 ans. Elle aime les caresses mais pas tout le temps. Elle aime sa tranquillité </p>
             </div>
             <div class="chat">
-                <img src="./assets/photo-poticha.jpg" alt="white cat" width="200" height="300">
                 <h3>Potit chat</h3> 
+                <img src="./assets/photo-poticha.jpg" alt="white cat" width="200" height="300">
+                <p>Potit chat est un mâle agé de 3 ans. Initiallement nommé Roméo mais ne répond pas à ce prénom. Il aime manger et dormir.</p>
             </div>
             <div class="rongeur">
-                <img src="https://www.lacompagniedesanimaux.com/media/amasty/blog/cache/1/f/800/410/1fbdddaae5c4d2ed642d0564c679a1bd.jpg">
                 <h3>Joufflu</h3>
+                <img src="https://www.lacompagniedesanimaux.com/media/amasty/blog/cache/1/f/800/410/1fbdddaae5c4d2ed642d0564c679a1bd.jpg">
+                <p>Joufflu est un hamster mâle de 3 mois. Il adore les roues, les carottes, la salade.</p>
             </div>
         </article>
         <article class="shop">
             <h2>Boutique en ligne</h2>
                 <h3>Jouets :</h3>
                         <div class="chat">
-                            <img src="./assets/cape-akatsuki.jpg" alt="cape akatsuki pour chat" width="200" height="200">
                             <p>Si votre chat a quitté son village natal pour rejoindre une organisation criminelle activement recherchée,</p>
+                            <img src="./assets/cape-akatsuki.jpg" alt="cape akatsuki pour chat" width="200" height="200">
                             <p>Cette cape lui ira à ravir !</p>
                             <p><b>23.99€</b></p>
                         </div>
                         <div class="chat">
-                            <img src="./assets/point-at-you.jpg" alt="doigt pointé sur l'utilisateur" width="200" height="200">
                             <p>ultimement, quel jouet sera meilleur pour un chat que vous même...?</p>
+                            <img src="./assets/point-at-you.jpg" alt="doigt pointé sur l'utilisateur" width="200" height="200">
                             <p><b>GRATUIT</b></p>
                         </div>
                     <h4>Pour chiens :</h4>
             
-                <h3>Alimentation :</h3>
+                    <h3>Alimentation : <b>PROMO EN COURS : il reste <span id="hours">23</span> heures, <span id="minutes">50</span> minutes et <span id="seconds">59</span> secondes</b></h3>
+
                     <h4>Pour chats :</h4>
                         
                     <h4>Pour chiens :</h4>
