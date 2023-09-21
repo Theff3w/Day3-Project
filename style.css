@@ -42,7 +42,6 @@ header nav ul {
     text-decoration: none;
   }
   .affichage {
-    
     display: flex;
     justify-content: space-evenly;
   }
@@ -61,13 +60,48 @@ header nav ul {
     font-size: 4rem;
   }
   
-  .fle{
+  .fle {
     display: flex;
+    justify-content: space-between; 
     font-size: 2.2rem;
-    margin:1rem;
+    margin: 1rem;
     color: #7e4a7c;
+}
 
-  }
+.fle > * {
+    max-width: 100%;
+}
+
+.fle img {
+    width: 180px;
+    height: 180px;
+    max-width: 100%;
+}
+
+.gallery div p {
+    background-color: rgb(246, 229, 219);
+    margin-top: 0;
+}
+
+#addButton {
+    background-color: #777777;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
+}
+
+
   .qui{
     color: #7e4a7c;
     font-size: 1.9rem;
@@ -75,11 +109,15 @@ header nav ul {
     text-align: center;
 
   }
+  .gallery {
+    background-image: url('./assets/fond-chien.png');
+    background-position: center;
+    background-size: cover;
+  }
   .gallery img{
     margin: 2rem;
     transition: transform .1s;
-    
-  }
+}
 .gallery img:hover{
   transform: scale(1.2);
 }
@@ -87,7 +125,7 @@ header nav ul {
   .gallery .hidden {
     display: none;
 }
-.shop p{
+.shop p {
   font-size: 2.5rem;
 
 }
@@ -177,4 +215,35 @@ header nav ul {
   width: 100%;
   height: auto;
   display: block;
+}
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.shop {
+  background-image : url('./assets/online-shop2.jpg');
+  background-size: cover;
+}
+.shop h2 {
+  text-align: center;
+  color: lightgrey;
+  text-shadow: 2px 2px 4px #555;
+}
+.shop h3 {
+  font-size: 28px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(55, 59, 55);
+  text-shadow: 1px 1px 2px #555;
+}
+
+.product p {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.promo {
+  color:red;
+  font-size: 20px;
 }
