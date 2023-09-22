@@ -1,8 +1,29 @@
-/* Style du body */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Style des boutons */
+button {
+  background-color: #7e4a7c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #5d3570;
+  transform: scale(1.05);
+}
+
+/* Style des liens */
+a {
+  color: #7e4a7c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #5d3570;
 }
 
 /* Style du header */
@@ -10,14 +31,27 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+  background-color: #3498db;
 }
+
 #darkMode {
   position: absolute;
   top: 1em;
   right: 1em;
   color: white;
-  background-color: black;
+  background-color: #7e4a7c;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
 }
+
+#darkMode:hover {
+  background-color: #5d3570;
+}
+
 header h1 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -25,6 +59,7 @@ header h1 {
   color: #7e4a7c;
   text-align: center;
 }
+
 h3 {
   color: #7e4a7c;
   font-size: 2.5rem;
@@ -36,6 +71,7 @@ header nav ul {
   background-color: #7e4a7c;
   padding: 0.5rem 0;
 }
+
 header nav ul li {
   display: inline;
   margin-right: 20px;
@@ -44,25 +80,21 @@ header nav ul li {
   font-size: 2.2rem;
   padding: 1rem;
 }
+
 header nav ul li a {
   color: white;
   text-decoration: none;
 }
-.affichage {
-  display: flex;
-  justify-content: space-evenly;
-}
-.affichage button {
-  padding: 1.2rem;
-  font-size: 1.2rem;
-}
+
 /* Style du main */
 main {
   padding: 20px;
 }
+
 article {
   margin-bottom: 40px;
 }
+
 h2 {
   font-size: 4rem;
 }
@@ -91,57 +123,56 @@ h2 {
 }
 
 #addButton {
-  background-color: #777777;
+  background-color: #5d3570;
   color: #fff;
   border: none;
   padding: 10px 20px;
+  font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 10px 0;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 #addButton:hover {
-  background-color: #0056b3;
+  background-color: #42214d;
+  transform: scale(1.05);
 }
+
 .qui {
   color: #7e4a7c;
   font-size: 1.9rem;
   padding: 1.2rem;
   text-align: center;
 }
+
 .gallery {
   background-color: rgb(246, 229, 219);
   background-position: center;
   background-size: cover;
 }
+
 .gallery img {
   margin: 2rem;
   transition: transform 0.1s;
 }
+
 .gallery img:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .gallery .hidden {
   display: none;
 }
+
 .shop p {
   font-size: 2.5rem;
 }
 
 /* Style du formulaire */
-button {
-  background-color: #7e4a7c;
-  padding: 0.8rem 1rem;
-  color: #fff;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  border-radius: 0.8rem;
-}
 form {
   background-color: #f9f9f9;
   padding: 35px;
@@ -149,6 +180,7 @@ form {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
 form input[type="text"],
 form input[type="tel"],
 form input[type="date"],
@@ -163,18 +195,24 @@ form button {
   border-radius: 5px;
   font-size: 16px;
 }
+
 form button {
-  background-color: #333;
-  color: white;
+  background-color: #7e4a7c;
+  color: #fff;
   border: none;
   cursor: pointer;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
 }
+
 form button:hover {
-  background-color: #555;
+  background-color: #5d3570;
+  transform: scale(1.05);
 }
 
 /* Style du footer */
-
 footer {
   background-color: #333;
   color: white;
@@ -193,14 +231,12 @@ footer a {
 }
 
 /* dark mode */
-
 .dark-mode {
   background-color: #222;
   color: #fff;
 }
 
 /* Carousel */
-
 .carousel {
   display: flex;
   justify-content: space-between;
@@ -209,31 +245,36 @@ footer a {
   height: 500px;
   margin: 0 auto;
 }
+
 .carousel-frame {
   overflow: hidden;
   height: 500px;
   position: relative;
 }
+
 .carousel-frame img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 .product {
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
   text-align: center;
 }
+
 .shop {
-  background-image: url("./assets/online-shop2.jpg");
-  background-size: cover;
+  background-color: #f4f5f7;
 }
+
 .shop h2 {
   text-align: center;
   color: lightgrey;
   text-shadow: 2px 2px 4px #555;
 }
+
 .shop h3 {
   font-size: 28px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
