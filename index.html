@@ -13,7 +13,7 @@
         alt="Logo"
     />
     <h1>L'arche des zanimos</h1>
-    <button id="darkMode">Dark mode</button>
+    <button type="button" id="darkMode">Dark mode</button>
     <nav>
         <ul>
         <li><a href="#description">Home</a></li>
@@ -30,7 +30,7 @@
         <article class="carousel">
         <button id="prevButton">Précédent</button>
         <article class="carousel-frame">
-            <img src="" alt="Image du carrousel" id="carouselImage" />
+            <img src="#" alt="Image du carrousel" id="carouselImage" />
         </article>
         <button id="nextButton">Suivant</button>
         </article>
@@ -39,9 +39,7 @@
             Le but de l’association l'Arche des zanimos est de replacer des
             animaux de personnes en difficulté suite au départ en maison de
             retraite, à un déménagement à l’étranger, à des problèmes de santé…
-            Nous militons également pour que les chiens de races, les nés au
-            coin d’une rue ou les réformés d’élevage aient aussi droit à un
-            nouveau foyer. Les animaux en refuge ont souvent une reconnaissance
+            Les animaux en refuge ont souvent une reconnaissance
             immense envers leurs nouvelles familles. Ils semblent comprendre
             intuitivement que vous leur avez donné une seconde chance dans la
             vie, et ils vous rendent cet amour de manière inconditionnelle. Leur
@@ -64,51 +62,52 @@
     <article class="gallery fle" id="gallery">
         <div class="chien">
         <h3>Canular</h3>
-        <img
+        <a href="Canular.html"><img
             src="https://fotomelia.com/wp-content/uploads/edd/2015/08/site-de-photos-et-images-gratuites-libres-de-droits17-1560x1246.jpg"
             alt="dog with cute look"
-        />
+        /></a>
         <p>
-            Canular a un an maintenant. Chien tout foufou, il aime jouer,
-            mordiller, aboyer de temps en temps
+            Canular est un mâle un an maintenant. Chien tout foufou, il aime jouer avec les enfants
         </p>
         </div>
         <div class="chien">
         <h3>Mandarine</h3>
-        <img
+        <a href="Mandarine.html"><img
             src="https://media.istockphoto.com/id/467923438/fr/photo/silly-tilts-chien-t%C3%AAte-en-face-du-grange.jpg?s=612x612&w=0&k=20&c=-McRYrOdeg5h2cDlPUSqfSMIXD9VpvmsMY4MkvUbdvM="
             alt="dog with tongue out"
-        />
+        /></a>
         <p>
-            Mandarine est une femmelle agée de 3 ans. Elle adore les enfants, et
-            les chats. Elle est calme et à besoin de beaucoup de balades.
+            Mandarine est une femelle agée de 3 ans. Elle adore les enfants, et
+            les chats
         </p>
         </div>
         <div class="chat">
         <h3>Yumi</h3>
-        <img src="./assets/photo-Yumi.jpg" alt="cute cat" />
+        <a href="Yumi.html"><img 
+            src="./assets/photo-Yumi.jpg" 
+            alt="cute cat" /></a>
         <p>
-            Yumi est une femmelle agée de 5 ans. Elle aime les caresses mais pas
-            tout le temps. Elle aime sa tranquillité
+            Yumi est une femelle agée de 5 ans. Elle aime les caresses mais pas
+            tout le temps
         </p>
         </div>
         <div class="chat">
         <h3>Potit chat</h3>
-        <img src="./assets/photo-poticha.jpg" alt="white cat" />
+        <a href="PotitChat.html"><img src="./assets/photo-poticha.jpg" alt="white cat" /></a>
         <p>
             Potit chat est un mâle agé de 3 ans. Initiallement nommé Roméo mais
-            ne répond pas à ce prénom. Il aime manger et dormir.
+            ne répond pas à ce prénom
         </p>
         </div>
         <div class="rongeur">
         <h3>Joufflu</h3>
-        <img
+        <a href="Joufflu.html"><img
             src="https://www.lacompagniedesanimaux.com/media/amasty/blog/cache/1/f/800/410/1fbdddaae5c4d2ed642d0564c679a1bd.jpg"
             alt="hamster"
-        />
+        /></a>
         <p>
-            Joufflu est un hamster mâle de 3 mois. Il adore les roues, les
-            carottes, la salade.
+            Joufflu est un hamster mâle de 3 mois. Il adore les roues et les
+            carottes
         </p>
         </div>
         <div class="hidden">
@@ -203,7 +202,7 @@
             alt="nourriture pour chat Royal Canin"
         />
         <p>
-            <strike><b>39.99€</b></strike> <b>24.99€ !</b>
+            <span class="barre"><b>39.99€</b></span> <b>24.99€ !</b>
         </p>
         </div>
 
@@ -216,7 +215,7 @@
             height="300"
         />
         <p>
-            <strike><b>39.99€</b></strike> <b>24.99€ !</b>
+            <span class="barre"><b>39.99€</b></span> <b>24.99€ !</b>
         </p>
         </div>
         <div class="rongeur product">
@@ -228,7 +227,7 @@
             height="300"
         />
         <p>
-            <b><strike>39.99€</strike></b> <b>24.99€ !</b>
+            <b><span class="barre">39.99€</span></b> <b>24.99€ !</b>
         </p>
         </div>
     </article>
@@ -236,7 +235,7 @@
 
     <footer class="contact" id="contact">
     <form action="GET">
-        <label for="username">Vos infos persos :</label>
+        <label for="name">Vos infos persos :</label>
         <br />
         <input
         type="text"
@@ -254,7 +253,7 @@
         required
         />
         <br />
-        <label for="usercontact">Vous contacter :</label>
+        <label for="tel">Vous contacter :</label>
         <br />
         <input
         type="tel"
@@ -271,7 +270,7 @@
         required
         />
         <br />
-        <label for="userselect">L'animal que vous souhaitez adopté :</label>
+        <label for="leszanimos">L'animal que vous souhaitez adopté :</label>
         <br />
         <select name="leszanimos" id="leszanimos">
         <option value="1">Canular</option>
@@ -292,6 +291,24 @@
         >
         </p>
     </address>
+    <div id="Jeu">
+        <div>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+        <div>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+        <div>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+        <div id="StatutJeu"></div>
+      </div> 
     </footer>
     <script src="app.js"></script>
 </body>
